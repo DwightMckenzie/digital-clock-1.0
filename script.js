@@ -52,4 +52,5 @@ function currentTime() {
 	ftr.children[0].textContent = `${dy} - ${mnth}/${dt}/${yr}`;
 }
 
-var refresh = setInterval(currentTime, 1000);
+currentTime();
+// var refresh = setInterval(currentTime, 1000);
