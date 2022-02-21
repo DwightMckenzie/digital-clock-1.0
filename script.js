@@ -42,10 +42,10 @@ function currentTime() {
 		msg = 'Nothing at this time!';
 	}
 
-	navigator.getBattery().then(function (e) {
-		let bttry = parseInt(e.level * 100);
-		ftr.children[1].innerHTML = `<i class="fa fa-battery-half" aria-hidden="true"></i> ${bttry}%`;
-	});
+// 	navigator.getBattery().then(function (e) {
+// 		let bttry = parseInt(e.level * 100);
+// 		ftr.children[1].innerHTML = `<i class="fa fa-battery-half" aria-hidden="true"></i> ${bttry}%`;
+// 	});
 
 	hdr.children[0].textContent = `${msg}`;
 	bdy.children[0].textContent = `${hr}:${min} ${ampm}`;
